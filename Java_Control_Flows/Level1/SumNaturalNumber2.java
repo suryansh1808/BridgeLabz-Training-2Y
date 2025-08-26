@@ -2,15 +2,14 @@ import java.util.Scanner;
 
 public class SumNaturalNumber2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         System.out.print("Enter a natural number (n): ");
-        int n = sc.nextInt();
+        int n=sc.nextInt();
 
-        if (n <= 0) {
+        if (n<=0) {
             System.out.println("Please enter a positive integer (natural number).");
             return;
         }
-
         int sumFormula = n * (n + 1) / 2;
 
         int sumLoop = 0;

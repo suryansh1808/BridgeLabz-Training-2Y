@@ -5,10 +5,10 @@ public class SpringSeason {
         System.out.print("Enter the month number (1-12): ");
         int month = sc.nextInt();
         System.out.print("Enter the day of the month (1-31): ");
-        int day = sc.nextInt();
-        if (month >= 3 && month <= 6) {
-            if (day >= 1 && day <= 31) {
-                System.out.println("It's spring season.");
+        int day =sc.nextInt();
+        if (month>= 3 && month <= 6) {
+            if (day>=1&&day<=31) {
+                System.out.println("It spring season.");
             } else {
                 System.out.println("Invalid day.");
             }

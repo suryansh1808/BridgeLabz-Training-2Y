@@ -2,34 +2,34 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
 
         System.out.print("Enter first number: ");
-        double first = sc.nextDouble();
+        double first= sc.nextDouble();
 
         System.out.print("Enter second number: ");
-        double second = sc.nextDouble();
+        double second =sc.nextDouble();
 
         System.out.print("Enter operator (+, -, *, /): ");
-        String op = sc.next();
+        String op=sc.next();
 
         System.out.print("Enter number of times to run the operation: ");
-        int number = sc.nextInt();
+        int number=sc.nextInt();
 
-        for (int i = 1; i < number; i++) {
+        for (int i=1; i < number; i++) {
             switch (op) {
                 case "+":
-                    System.out.println("Result: " + (first + second));
+                    System.out.println("Result: " + (first +second));
                     break;
                 case "-":
-                    System.out.println("Result: " + (first - second));
+                    System.out.println("Result: " + (first- second));
                     break;
                 case "*":
-                    System.out.println("Result: " + (first * second));
+                    System.out.println("Result: " + (first*second));
                     break;
                 case "/":
                     if (second != 0) {
-                        System.out.println("Result: " + (first / second));
+                        System.out.println("Result: " + (first/second));
                     } else {
                         System.out.println("Error: Division by zero");
                     }
