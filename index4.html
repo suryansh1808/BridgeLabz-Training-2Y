@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudForge - Master Cloud Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; overflow-x: hidden; }
+        
+        /* Soft Background Gradient Animations */
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        
+        /* New Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .animate-blob { animation: blob 10s infinite alternate ease-in-out; }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        
+        /* Tech Grid Pattern */
+        .bg-grid-pattern {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-grid-pattern">
+
+    <header class="relative w-full overflow-hidden bg-[#fafcff]/90 pb-32 pt-4 border-b border-slate-100">
+        
+        <div class="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-blue-300/40 rounded-full mix-blend-multiply filter blur-[120px] animate-blob z-0"></div>
+        <div class="absolute top-[5%] right-[-10%] w-[50vw] h-[50vw] max-w-[700px] max-h-[700px] bg-indigo-300/40 rounded-full mix-blend-multiply filter blur-[120px] animate-blob animation-delay-2000 z-0"></div>
+        <div class="absolute bottom-[10%] left-[15%] w-[40vw] h-[40vw] max-w-[600px] max-h-[600px] bg-cyan-200/40 rounded-full mix-blend-multiply filter blur-[100px] animate-blob animation-delay-4000 z-0"></div>
+
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center bg-white/70 backdrop-blur-xl rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative z-50 mt-2 mx-4 border border-white/80 transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div class="flex items-center gap-2 pl-2 cursor-pointer group">
+                <div class="w-8 h-6 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full relative shadow-md group-hover:scale-105 transition-transform">
+                    <div class="w-6 h-6 bg-cyan-400 rounded-full absolute -top-2 left-3 opacity-90"></div>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight ml-2 text-slate-800 group-hover:text-blue-600 transition-colors">CloudForge</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-slate-600">
+                <a href="#" class="text-blue-600 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-blue-600 after:rounded-full">Home</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Labs</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#" class="hover:text-blue-600 transition-colors">About</a>
+            </div>
+            <div class="flex items-center gap-6 font-semibold pr-1">
+                <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors">Login</a>
+                <a href="#" class="bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-7 py-2.5 rounded-xl shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:-translate-y-0.5 active:scale-95 transition-all duration-200">Sign Up</a>
+            </div>
+        </nav>
+
+        <section class="max-w-7xl mx-auto px-6 pt-24 pb-12 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 font-semibold text-sm mb-6 flex items-center gap-2 w-max shadow-sm">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span>
+                    </span>
+                    New Multi-Cloud Labs Added
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.15] text-slate-900 tracking-tight">
+                    Master <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Cloud Skills</span> <br> with Real Labs
+                </h1>
+                <p class="mt-6 text-lg text-slate-600 max-w-md leading-relaxed font-medium">
+                    Stop watching tutorials. Launch real-world sandbox environments, validate your skills, and track progress instantly.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4 items-center">
+                    <button class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl shadow-xl shadow-blue-500/30 font-bold hover:shadow-blue-500/50 hover:-translate-y-1 active:scale-95 transition-all duration-300 flex items-center gap-2">
+                        Start Learning Free
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </button>
+                    <button class="px-8 py-4 rounded-xl font-bold text-slate-700 bg-white border border-slate-200 shadow-sm hover:bg-slate-50 hover:border-slate-300 active:scale-95 transition-all duration-300">
+                        Explore Catalog
+                    </button>
+                </div>
+            </div>
+            <div class="relative mt-10 md:mt-0 animate-float">
+                <div class="absolute -inset-1 bg-gradient-to-tr from-cyan-400 to-indigo-500 rounded-[2.5rem] blur-xl opacity-30"></div>
+                <div class="bg-white/90 backdrop-blur-md p-3 rounded-3xl shadow-[0_20px_50px_rgb(0,0,0,0.1)] border border-white relative z-10">
+                    <div class="flex gap-1.5 mb-3 px-2">
+                        <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+                    <img src="https://placehold.co/800x520/f8fafc/94a3b8?text=Interactive+Cloud+Dashboard" alt="Dashboard Preview" class="rounded-2xl w-full border border-slate-100/50">
+                </div>
+            </div>
+        </section>
+
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-20">
+            <svg class="relative block w-full h-[80px] md:h-[150px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,120 Q100,60 200,90 T400,70 T600,100 T800,50 T1000,90 T1200,60 L1200,120 L0,120 Z" fill="#ffffff" opacity="0.6"></path>
+                <path d="M0,120 C150,50 200,90 350,90 C500,90 550,30 700,60 C850,90 900,40 1050,70 C1200,100 1200,70 1200,70 L1200,120 L0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-24 text-center bg-transparent relative z-30">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Everything you need to master cloud</h2>
+        <p class="text-slate-500 mb-16 text-lg max-w-2xl mx-auto">Skip the theory. Get your hands dirty with real environments and automated grading.</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            <div class="group bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-slate-100 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:border-blue-200 transition-all duration-300 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-3xl group-hover:bg-blue-100 transition-colors"></div>
+                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 text-2xl border border-blue-100 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm relative z-10">☁️</div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900 relative z-10">Real Cloud Environments</h3>
+                <p class="text-slate-500 leading-relaxed text-sm relative z-10">Not a simulation. Get actual AWS, Azure, and GCP console access to build real infrastructure.</p>
+            </div>
+            
+            <div class="group bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-slate-100 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:border-indigo-200 transition-all duration-300 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-full blur-3xl group-hover:bg-indigo-100 transition-colors"></div>
+                <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 mb-6 text-2xl border border-indigo-100 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-sm relative z-10">🎯</div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900 relative z-10">Automated Scoring</h3>
+                <p class="text-slate-500 leading-relaxed text-sm relative z-10">Click 'Check My Work' and get instant feedback on your configurations with detailed hints.</p>
+            </div>
+
+            <div class="group bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-slate-100 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:border-cyan-200 transition-all duration-300 relative overflow-hidden">
+                <div class="w-14 h-14 bg-cyan-50 rounded-2xl flex items-center justify-center text-cyan-600 mb-6 text-2xl border border-cyan-100 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all shadow-sm relative z-10">🛡️</div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900 relative z-10">Secure Sandboxes</h3>
+                <p class="text-slate-500 leading-relaxed text-sm relative z-10">Experiment without fear. Our sandboxes are 100% secure and automatically clean up after you.</p>
+            </div>
+            
+            <div class="group bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-slate-100 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:border-purple-200 transition-all duration-300">
+                <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 mb-6 text-2xl border border-purple-100 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all shadow-sm">📈</div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Skill Gap Analysis</h3>
+                <p class="text-slate-500 leading-relaxed text-sm">Visual dashboards that show exactly where you excel and which cloud concepts need work.</p>
+            </div>
+            <div class="group bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-slate-100 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:border-emerald-200 transition-all duration-300">
+                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 text-2xl border border-emerald-100 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all shadow-sm">🌐</div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Multi-Cloud Ready</h3>
+                <p class="text-slate-500 leading-relaxed text-sm">One platform to master AWS, Google Cloud, and Azure. Switch contexts with one click.</p>
+            </div>
+            <div class="group bg-white p-8 rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-slate-100 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:border-orange-200 transition-all duration-300">
+                <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mb-6 text-2xl border border-orange-100 group-hover:scale-110 group-hover:bg-orange-600 group-hover:text-white transition-all shadow-sm">💰</div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Zero Surprise Costs</h3>
+                <p class="text-slate-500 leading-relaxed text-sm">Forget about forgetting to turn off an EC2 instance. We cover all cloud infrastructure costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 relative border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-16">How CloudForge Works</h2>
+            
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4">
+                <div class="hidden md:block absolute top-[50px] left-[10%] right-[10%] h-0.5 border-t-2 border-dashed border-slate-300 -z-10"></div>
+
+                <div class="group flex flex-col items-center w-56 relative bg-slate-50 py-4">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center text-blue-500 shadow-lg border border-slate-100 mb-6 text-4xl group-hover:-translate-y-2 group-hover:shadow-blue-200 transition-all">🚀</div>
+                    <h4 class="font-extrabold text-slate-900 text-lg mb-2">1. Pick a Lab</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Choose from 500+ real-world scenarios across difficulties.</p>
+                </div>
+                
+                <div class="group flex flex-col items-center w-56 relative bg-slate-50 py-4">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center text-indigo-500 shadow-lg border border-slate-100 mb-6 text-4xl group-hover:-translate-y-2 group-hover:shadow-indigo-200 transition-all">⚙️</div>
+                    <h4 class="font-extrabold text-slate-900 text-lg mb-2">2. Spin Up</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">We provision temporary cloud credentials instantly.</p>
+                </div>
+                
+                <div class="group flex flex-col items-center w-56 relative bg-slate-50 py-4">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center text-cyan-500 shadow-lg border border-slate-100 mb-6 text-4xl group-hover:-translate-y-2 group-hover:shadow-cyan-200 transition-all">💻</div>
+                    <h4 class="font-extrabold text-slate-900 text-lg mb-2">3. Build & Fix</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Perform tasks directly in the actual cloud console.</p>
+                </div>
+
+                <div class="group flex flex-col items-center w-56 relative bg-slate-50 py-4">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center text-emerald-500 shadow-lg border border-slate-100 mb-6 text-4xl group-hover:-translate-y-2 group-hover:shadow-emerald-200 transition-all">💯</div>
+                    <h4 class="font-extrabold text-slate-900 text-lg mb-2">4. Get Scored</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Our engine checks your work and updates your profile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-24 bg-transparent">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Trending Cloud Labs</h2>
+                <p class="text-slate-500 text-lg">Jump straight into our most popular environments.</p>
+            </div>
+            <a href="#" class="hidden md:flex font-semibold text-blue-600 hover:text-blue-700 items-center gap-1 group">
+                View full catalog 
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] shadow-sm border border-slate-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col">
+                <div class="h-52 bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(249,115,22,0.3)_0%,transparent_70%)]"></div>
+                    <span class="text-7xl group-hover:scale-110 transition-transform duration-500 text-orange-400 drop-shadow-[0_0_20px_rgba(249,115,22,0.6)]">🖧</span>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wide">Beginner</span>
+                        <span class="text-slate-400 text-sm font-medium flex items-center gap-1">⏱️ 45m</span>
+                    </div>
+                    <h3 class="font-extrabold text-2xl text-slate-900 mb-2">EC2 Fleet Management</h3>
+                    <p class="text-slate-500 text-sm mb-8 flex-1">Deploy, scale, and manage a fleet of virtual machines behind an application load balancer.</p>
+                    <button class="w-full bg-slate-900 text-white font-bold py-3.5 rounded-xl hover:bg-blue-600 transition-colors shadow-md">Launch Lab</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2rem] shadow-sm border border-slate-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col relative">
+                <div class="absolute top-4 right-4 z-10 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-sm">Popular</div>
+                <div class="h-52 bg-[#0a192f] flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.3)_0%,transparent_70%)]"></div>
+                    <span class="text-7xl group-hover:scale-110 transition-transform duration-500 text-blue-400 drop-shadow-[0_0_20px_rgba(56,189,248,0.6)]">⎈</span>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full uppercase tracking-wide">Advanced</span>
+                        <span class="text-slate-400 text-sm font-medium flex items-center gap-1">⏱️ 90m</span>
+                    </div>
+                    <h3 class="font-extrabold text-2xl text-slate-900 mb-2">Kubernetes Cluster Setup</h3>
+                    <p class="text-slate-500 text-sm mb-8 flex-1">Bootstrap a high-availability K8s cluster and deploy a microservices architecture.</p>
+                    <button class="w-full bg-slate-900 text-white font-bold py-3.5 rounded-xl hover:bg-blue-600 transition-colors shadow-md">Launch Lab</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2rem] shadow-sm border border-slate-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col">
+                <div class="h-52 bg-[#170f2a] flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(168,85,247,0.3)_0%,transparent_70%)]"></div>
+                    <span class="text-7xl group-hover:scale-110 transition-transform duration-500 text-purple-400 drop-shadow-[0_0_20px_rgba(168,85,247,0.6)]">🔒</span>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wide">Intermediate</span>
+                        <span class="text-slate-400 text-sm font-medium flex items-center gap-1">⏱️ 60m</span>
+                    </div>
+                    <h3 class="font-extrabold text-2xl text-slate-900 mb-2">IAM & VPC Security</h3>
+                    <p class="text-slate-500 text-sm mb-8 flex-1">Configure custom VPC networks, subnets, and strict IAM policies for least privilege access.</p>
+                    <button class="w-full bg-slate-900 text-white font-bold py-3.5 rounded-xl hover:bg-blue-600 transition-colors shadow-md">Launch Lab</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-12">
+        <div class="bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl border border-slate-700">
+            <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-cyan-500 rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-blob"></div>
+            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-blob animation-delay-2000"></div>
+            
+            <div class="relative z-10 flex flex-col items-center">
+                <span class="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-cyan-300 font-bold text-sm mb-8 tracking-wider uppercase backdrop-blur-sm">Start For Free</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight leading-tight">Ready to stop guessing <br> and start building?</h2>
+                <p class="text-slate-300 mb-10 text-xl max-w-xl">Join thousands of engineers who leveled up their cloud careers with CloudForge hands-on labs.</p>
+                <button class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black text-lg shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_rgba(255,255,255,0.5)] hover:scale-105 active:scale-95 transition-all duration-300">
+                    Create Your Account →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-200 mt-20 bg-white/50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-6 bg-blue-600 rounded-full relative">
+                        <div class="w-6 h-6 bg-cyan-400 rounded-full absolute -top-2 left-3"></div>
+                    </div>
+                    <span class="font-extrabold text-xl tracking-tight">CloudForge</span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-xs mb-8">The most realistic hands-on cloud learning platform. Validate skills, not just theory.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-100 hover:text-blue-600 transition-colors">𝕏</a>
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-100 hover:text-blue-600 transition-colors">in</a>
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-100 hover:text-blue-600 transition-colors">GH</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-6">Platform</h4>
+                <ul class="text-slate-500 text-sm space-y-4 font-medium">
+                    <li><a href="#" class="hover:text-blue-600 transition">Lab Catalog</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Pricing</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">For Enterprise</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-6">Company</h4>
+                <ul class="text-slate-500 text-sm space-y-4 font-medium">
+                    <li><a href="#" class="hover:text-blue-600 transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Documentation</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center py-6 border-t border-slate-200 text-sm text-slate-400 font-medium">
+            © 2024 CloudForge. Designed for builders.
+        </div>
+    </footer>
+
+</body>
+</html>
